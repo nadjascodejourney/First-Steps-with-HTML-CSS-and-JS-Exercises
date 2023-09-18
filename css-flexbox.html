@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>CSS Flexbox Aufgabe</title>
+
+  <style>
+
+    html {
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(248, 245, 202);
+    }
+
+    header {
+      background: rgb(248, 192, 118);
+      height: 60px;
+    }
+
+    ion-icon[name="logo-google"] { 
+      font-size: 50px; 
+      color: rgb(18, 165, 18); /*habe ein Google Icon von Ionicon verwendet, dort gab es allerdings nur schwarzweiß*/
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    nav {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 15%;
+        padding: 20px;
+        position: sticky;
+        display: flex;
+        
+      }
+
+    button {
+      padding: 10px;
+      width: 100px;
+      height: 30px;
+      border: 1px solid red;
+      background-color: blue;
+      color: white;
+      text-align: center;
+    }
+    
+    .box {
+      width: 200px;
+      height: 20px;
+      background-color: white;
+      border: 1px solid black;
+      align-items: flex end;
+    }
+
+    h1 {
+      text-align: left;
+      color: black;
+      line-height: 100px;
+      margin: 10px;
+      padding: 0px;
+      font-size: large;
+    }
+
+  section {
+      display: flex;
+      flex-direction: row;
+      }
+
+  article.one {
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+
+  .kachel {
+    border: 1px;
+    padding: 50px;
+    background-color: aquamarine;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  img {
+    display: inline;
+  }
+ 
+  </style>
+</head>
+
+<body>
+
+<header>
+<ion-icon name="logo-google"></ion-icon>
+
+<nav>
+  <button>Home</button>
+  <button>Products</button>
+  <button>Team</button>
+  <button>Cart</button>
+</nav>
+
+<div class="box"></div>
+
+</header>
+
+<h1>Flex home</h1>
+
+<section>
+  <article class="one">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium eius quisquam ratione obcaecati quia sunt voluptatem quidem corporis delectus quo, magni veritatis saepe officiis reprehenderit error iusto laboriosam cumque.</p>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non ullam facere explicabo numquam corporis totam consequuntur esse aspernatur iusto, distinctio impedit minus laborum et tenetur, dolorem eaque reprehenderit a?</p>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum sequi itaque magni fuga praesentium quidem ab velit perferendis nobis?</p>
+  </article>
+</section>
+<br>
+
+<section>
+  <article>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium eius quisquam ratione obcaecati quia sunt voluptatem quidem corporis delectus quo, magni veritatis saepe officiis reprehenderit error iusto laboriosam cumque.</p>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non ullam facere explicabo numquam corporis totam consequuntur esse aspernatur iusto, distinctio impedit minus laborum et tenetur, dolorem eaque reprehenderit a?</p>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum sequi itaque magni fuga praesentium quidem ab velit perferendis nobis?</p>
+  </article>
+</section>
+<br>
+
+<section>
+<article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate iusto voluptatem sed blanditiis magnam ex maxime. Recusandae, ipsum mollitia ipsam quos quibusdam sit iusto modi iure, perferendis laboriosam unde, ad eaque dolore! Soluta earum impedit recusandae repellat debitis ratione, cumque, vel ipsam mollitia quos facere quas eos accusamus dicta.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit aut ut. Cum harum temporibus ut iure laborum sapiente sint quia itaque impedit blanditiis deleniti quasi quis facilis et reiciendis, odio recusandae ullam cupiditate architecto sequi excepturi consequuntur? Libero sit aliquid voluptates molestiae velit ut placeat repudiandae aliquam ad nobis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta aut tempora explicabo dolor similique est nulla? Magni mollitia dignissimos dolores, quis deleniti ex sequi. Deserunt asperiores, amet quasi sapiente pariatur neque repudiandae distinctio nostrum tempora perspiciatis optio mollitia? Neque ipsa laboriosam cum, fuga officia voluptate tempora consequuntur eos reiciendis?</p>
+</article>
+</section>
+<br>
+
+<section>
+  <div class="kachel">
+    <img src="https://www.googlewatchblog.de/wp-content/uploads/google-logo-perfekt.jpg" alt="Googlelogo" width="25%">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sunt odio accusamus culpa nam consequuntur aliquam temporibus enim cumque possimus.</p>
+  </div>
+  
+  <div class="kachel">
+    <img src="https://www.googlewatchblog.de/wp-content/uploads/google-logo-perfekt.jpg" alt="Googlelogo" width="25%">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores blanditiis labore cumque maiores illum corrupti, suscipit debitis deleniti reprehenderit!</p>
+  </div>
+
+  <div class="kachel">
+    <img src="https://www.googlewatchblog.de/wp-content/uploads/google-logo-perfekt.jpg" alt="Googlelogo" width="25%">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque dolores esse architecto tenetur similique eaque? Similique adipisci quaerat dolorem rem!</p>
+  </div>
+</section>
+<br>
+
+<section>
+  <article>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum perferendis blanditiis culpa recusandae repellendus nostrum ratione quam nobis aliquam impedit? Corporis iure exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum perferendis blanditiis culpa duce repellendus nostrum ratione quam nobis aliquam impedit? Corporis iure exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet c commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum perferendis blanditiis culpa ducimus magnam recusandae repellendus nostrum ratione quam nobis aliquam impedit? Corporis iure exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet consectetur commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum perferendis blanditiis culpa ducimus magnam recusandae repellendus nostrum ratione quam nobis aliquam impedit? Corporis iure exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi, eveniet sit, esse quidem accusamus sunt ipsa quos itiis culpa ducimus magnam recusandae repellendus nostrum ratione quam nobis aliquam impedit? Corporis iure exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum perferendis blanditiis culpa ducimus magnam recusandae repellendus nostrum ratione quam nobis aliquam impedit?.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime commodi, eveniet sit, esse quidem accusamus sunt ipsa quos harum.</p>
+  </article>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>super tolles Formular</title>
+</head>
+<body>
+   
+  <h1>Wir üben, wie man ein Formular erstellt</h1>
+   
+  <form>
+    
+    <label>Vorname:</label><br>
+    <input type="text" name="vorname"><br><br>
+
+    <label>Nachname:</label><br>
+    <input type="text" name="name" required><br><br> 
+    <!--requirend für Pflichtfelddefinition hat kein Endtag!-->
+    
+    <label>Nachricht:</label><br>
+    <textarea name="nachricht" placeholder="Tippe für Text"></textarea><br><br>
+
+    <label>Wähle deinen Lieblingskurs:</label><br><br>
+
+    <input type="radio" id="wd" name="Kursauswahl" value="Webdevelopement"> 
+    <!--input hat kein Endtag!-->
+    <label for="wd">Webdevelopement</label><br>
+
+    <input type="radio" id="om" name="Kursauswahl" value="Online Marketing">
+    <label for="om">Online Marketing</label><br>
+
+    <input type="radio" id="aws" name="Kursauswahl" value="AWS">
+    <label for="aws">AWS</label><br><br>
+
+
+    <label>Du willst immer auf dem Laufenden bleiben? Dann bestell unseren Newsletter, indem du in die Checkbox klickst:</label><input type="checkbox" name="Newsletter-Anmeldung"><br><br>
+
+    <label>Ich stimme den Datenschutzbestimmungen zu.</label><input type="checkbox" name="Newsletter-Anmeldung" checked><br><br>
+    <!--checked eingeben führt zu bereits ausgefüllter Checkbox, die der Nutzer aktiv anklicken muss, wenn er etwas nicht möchte-->
+
+    <label>Aus welchem Land kommst du? Wähle dein Land, indem du hier im Dropdownmenü auswählst.</label>   
+    <select name="Laenderauswahl">
+      <option value="ar">Armenien</option>
+      <option value="be">Belgien</option>
+      <option value="ch">Chile</option>
+      <option value="de">Deutschland</option>
+      <option value="la">Laos</option>
+      <option value="nn">Anderes Land</option>
+    </select><br><br> 
+    
+    <label>Wann hast du Geburtstag?</label><br><br>
+     <input type="date" name="Datum"><br><br> 
+
+     <label>Was ist deine Lieblingsfarbe?</label><br><br>
+     <input type="color" name="Farbe"><br><br> 
+
+     <label>Hier kannst du deinen Lebenslauf hochladen:</label>
+     <input type="file" name="Datei"><br><br> 
+
+     <label>E-Mail Adresse eingeben:</label>
+     <input type="email" name="emailadresse"><br><br> 
+
+     <label>Überlege dir ein <i>Passwort</i> und trage es hier ein:</label>
+     <input type="password" name="Passwort erstellen"><br><br> 
+
+     <label>Vergiss nicht, unten auf <b>Senden</b> zu klicken!</label><br><br>
+     <input type="submit" name="Senden-Button"><br><br>     
+    <input type="range" name="Regler">
+
+   </form>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Icons</title>
+
+  <style>
+
+    ion-icon[name="logo-instagram"] /*ion icon ist kein Standard html element; den Attribut Selektor hier verwenden, wenn sich Eigenschaften nur auf dieses Icon beziehen sollen*/ { font-size: 50px; /*behandelt das Icon als ob es Text wäre*/
+    color: magenta;
+    }
+  
+  </style>
+
+</head>
+<body>
+  <h1>Icons einfügen</h1>
+
+  <!-- Icons von externer Quelle aus dem Netz einfügen und mit Link versehen:-->
+  <a href="https://instagram.com" target="_blank">
+
+  <ion-icon name="logo-instagram"></ion-icon>
+
+  </a>
+
+  <!-- Diese Quelle muss ganz unten vor das Endtag von Body-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

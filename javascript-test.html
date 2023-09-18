@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Testtext</h1>
+
+  <h2>
+    Breite: <span id="breite">
+
+    </span>px
+  </h2>
+  <!--span ist leeres Textelement-->
+  <h2>Höhe: <span id="hoehe">
+
+  </span>px
+  </h2>
+  <!--Umlaute im Code vermeiden-->
+
+
+  <img src="bilder/Katze.jpg" alt="Katzenbild" width="400" id="katze">
+
+  <script> //hier interner Javascript-Code
+
+  //Variablen deklarieren, Datentypen, Ausgabe in Konsole
+
+  var text = 'Hallo '; // Variablentyp string (für Text)
+  console.log(text);
+  // var userName = prompt('Bitte Vornamen eingeben');
+  // var welcome = text + userName;
+  // console.log(welcome);
+
+  // Typ Number
+  var zahl1 = 8; //= ist Zuweisungsoperator
+  var zahl2 = 13;
+  var summe = zahl1 + zahl2; 
+  console.log(summe);
+
+  // Typ Boolean
+  var single = true;
+  console.log(single);
+
+  // Typ Object
+  var farben = ['rot', 'grün', 'blau', 'gelb'] //Der Gesamtinhalt in den eckigen Klammern wird array gennant
+  console.log (farben);
+  console.log (farben[2]); //um bestimmten Wert aus dem Array in der Konsole auszulesen
+
+  single = zahl1 == zahl2; //== Zeichen für gleich bzw. Vergleich
+  console.log (single);
+
+  single = zahl1 != zahl2; //!= Zeichen für ungleich
+  console.log (single);
+
+  single = zahl1 === zahl2; // === ist Zeichen für "strikte Gleichheit", hier zur Prüfung der Gleichheit der Datentypen 
+  console.log (single);
+
+  //DOM Manipulation: Über Document greife ich auf das HTML Dokument zu
+  document.querySelector('h1').textContent = 'Javascript ist toll'; //um über JS oben in das HTML Element H1 reinzuschreiben oder Kleinigkeiten an der Gestaltung zu ändern, wenn ich das hier machen wollen würde
+  document.querySelector('h1').style.color = 'red';
+
+  //Schleifen und Arrays
+  for(var i = 0; i < farben.length; i++) {
+    console.log(farben[i]) //um Farben an der Stelle i auszugeben; 
+    // Warum bei i = 0? 
+  }
+
+  //Funktionen, Verzweigungen (if-else), Ereignisse bzw. Events, Bildaustausch bei onklick:
+
+
+
+ //JS muss prüfen, welches Bild schon angeklickt wurde, damit es das jeweils andere anzeigen kann
+
+
+ //Source Attribut oben beim Bild muss ausgelesen werden, damit man es mit JS überhaupt austauschen kann 
+ var bild = document.getElementById('katze');
+ //Eventlistener wartet auf Eintreten eines Ereignisses, hier cklick und ich nenne diese funktion, die beim click eintritt, bildwechsel
+ bild.addEventListener('click', bildWechsel);
+ function bildWechsel() {
+  //damit system weiß, welches bild überhaupt gerade aktiv ist:
+  if(bild.getAttribute('src') == 'bilder/Katze.jpg') {
+    // nun Wechselbild angeben, das auf Klick folgen soll
+    bild.src = 'bilder/Treppe.jpg'
+  } else {
+    bild.src = 'bilder/Treppe.jpg'
+  }
+ }
+
+ // Funktionen, Ereignisse, DOM-Manipulation
+
+ window.addEventListener('load', bildschirmGroesse);
+
+ window.addEventListener('resize', bildschirmGroesse);
+ function bildschirmGroesse() {
+
+  document.getElementById('breite').innerHTML = window.innerWidth;
+
+  document.getElementById('hoehe').innerHTML = window.innerHeight;
+
+  //mit style kann man hier HG-Farbe anpassen anhand der Werte, die sich aus window innerwidth ergeben
+  document.body.style.backgroundColor = '#' + window.innerWidth;
+
+ }
+  </script>
+
+</body>
+</html>

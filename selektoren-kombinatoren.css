@@ -1,0 +1,33 @@
+p {color: blue;}
+
+/* Nachfahren Selektor */
+section p {
+  color: forestgreen;
+}
+/* Kind Selektor für zweiten Nachfahren innerhalb von section: Hier wäre das das zweite p, weil das erste p in dem direkten Kind <article> steht und das erste p somit eigentlich ein Enkelkind ist*/
+section > p {
+  color: crimson;
+}
+
+/* Kind Selektor für ersten Nachfahren innerhalb von article, um das erste p zu erreichen*/
+article > p {
+font-style: italic;
+}
+
+/* Nachbar Selektor für das was direkt nach einem ausgewählten Selektor kommt. Der letzte p ist übrigens blau, weil wir das ganz oben für das Doc festgelegt haben und daran in weiteren Spezifikationen nichts verändert haben*/
+section + p {
+  font-weight: bold;
+}
+
+/*Klassenselektor, um den allerletzten Absatz auszuwählen. Die Klasse wurde im html code zugewiesen und css greift hier darauf zurück. Das p vor dem Punkt am Anfang könnte man auch weglassen. Wenn man es schreibt, dann darauf achten, dass zwischen dem p und dem Punkt kein Leerzeichen ist. (Das würde nämlich dann bedeuten, dass css den Nachfahren eines p sucht, der die Klasse letzter hat) */
+.letzter-absatz {
+  font-size: 32px;
+}
+
+#art-2 {
+  background-color: rgb(255 ,0, 0, 0.5);
+}
+
+
+
+/* Erläuterungen siehe auch: https://www.mediaevent.de/css/css-selektor-kontextselektor.html */

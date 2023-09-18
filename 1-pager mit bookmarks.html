@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Page Website</title>
+  <link rel="stylesheet" href="/css/navigation.css">
+  
+  <style>   
+    /* Das sorgt dafür, daß jede section mindestens 100% der Browserfenster-Höhe ausfüllt (vh = viewport height). Kann entfernt werden, wenn genügend Inhalt in die sections eingefügt wurde. Das ist an sich auch gut für Versuchszwecke, um zu sehen, dass die Seite tatsächlich springt anhand der Sprungmarken */
+    section {min-height: 100vh}
+  </style>
+  
+</head>
+
+<body>
+
+<header id="home">
+  <!--damit Sprung auf Startseite mit Header geht, wenn man auf Home klickt-->
+
+</header>
+
+  <nav>
+    <!-- Füge hier eine Navigation mit Links ein, die zu den einzelnen sections springen! (bookmark jumps) -->
+    <a href="#home">Home</a>
+    <a href="#kompetenzen">Kompetenzen</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#lebenslauf">Lebenslauf</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <h1>Navigation mit Bookmark Jumps</h1> <!--damit Sprung auf Hauptüberschrift geht, wenn man auf Home klickt, könnte man auch hier hinter h1 die id einfügen-->
+
+  <main>
+      
+    <section>
+      <h2>Home</h2> <!--hier soll später nicht mehr "home" stehen-->
+    </section>
+    
+    <section>
+      <h2 id="kompetenzen">Kompetenzen</h2>
+    </section>
+    
+    <section>
+      <h2 id="projekte">Projekte</h2>
+    </section>
+    
+    <section>
+      <h2 id="lebenslauf">Lebenslauf</h2>
+    </section>
+    
+    <section>
+      <h2 id="kontakt">Kontakt</h2>
+    </section>
+    
+    <a href="#home">Nach oben zu home springen</a>
+
+    
+  </main>
+
+</body>
+</html>

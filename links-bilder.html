@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Links und Bilder</title>
+
+  <style>
+    a.extern { /*inline element*/
+      display: inline-block; /*inline in blockelement verwandeln, welches sich aber noch wie ein inline element darstellt, nur block würde die gesamte Bildschirmbreite einnehmen*/
+      text-decoration: none;
+      background-color: chartreuse;
+      color: red;
+      padding: 20px; /*padding gehört mit zum Anklickbaren Berech*/
+    }
+    a.extern:hover /*ohne Leerzeichen Pseudoklasse hover dran hängen*/ {
+      background: blue;
+    }
+    a.extern:active {
+      background-color: yellow;
+    }
+    img {
+      border: 5px solid blue;
+      filter: grayscale(1) blur(1px); /*um ein bild zunächst schwarzweiß und unscharf darzustellen*/
+    }
+    img:hover { /*damit mit dem bild etwas passiert, wenn man mit der Maus drüberfährt*/
+      border-color: red;
+      filter: none;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1 title="Ich bin die Hauptüberschrift">Links und Bilder</h1>
+  <!--Der folgende Link ist ein externer Link. Durch das target Attribut führt er den User in einem neuen Tab auf die verlinkte Seite-->
+  
+  <a class="extern" href="https://pixabay.com/" target="_blank">Link zu Pixabay</a>
+
+  <br><br><br>
+
+  <!--Der folgende Link ist ein interner Link-->
+
+  <a href="grundstruktur.html">Link zu Grundstruktur</a>
+
+  <br><br>
+
+  <img src="/bilder/Vogel.jpg" alt="Ein Vogel sitzt auf einem Ast" width="300">
+
+  <!--mit dem Atrribut width kann man die Bildgröße anpassen-->
+
+</body>
+</html>

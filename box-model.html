@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>CSS Box Model</title>
+  <style>
+
+/*Gib den sections unterschiedliche margins, borders und paddings*/
+
+.box1 {
+  padding: 30px;
+  border: 2px dashed;
+  margin: 50px;
+}
+
+.box2 {
+  padding: 25px;
+  border: 10px dotted;
+  margin: 30px;
+}
+
+.box3 {
+  padding: 5px;
+  border: 20px;
+  border-style: double;
+  margin: 70px;
+}
+
+/*Die Paragraphen sollten ihre eigenen borders haben, halb so groß (in der Breite) wie die sections sein und innerhalb der sections zentriert werden*/
+
+p {
+  display: block;
+  text-align: center;
+}
+
+.p1 {
+  border: 1px;
+  border-width: 1px;
+}
+
+.p2 {
+  border: 5px;
+  border-width: 5px;
+}
+
+.p3 {
+  border: 10px;
+  border-width: 10px;
+}
+  </style>
+  
+</head>
+<body>
+  <section class="box1">
+    <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit commodi sit tempore soluta similique veritatis consequatur sed blanditiis minus dolor.</p>
+
+  <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus nihil porro commodi nobis velit debitis culpa consequatur laboriosam incidunt.</p>
+  </section>
+
+  <section class="box2">
+    <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit commodi sit tempore soluta similique veritatis consequatur sed blanditiis minus dolor.</p>
+
+  <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus nihil porro commodi nobis velit debitis culpa consequatur laboriosam incidunt.</p>
+  </section>
+
+  <section class="box3">
+    <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit commodi sit tempore soluta similique veritatis consequatur sed blanditiis minus dolor.</p>
+
+  <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus nihil porro commodi nobis velit debitis culpa consequatur laboriosam incidunt.</p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Listen</title>
+
+  <style>
+    ul {
+      list-style-type: square;
+      list-style-position: inside;
+    }
+    
+    /*hier müsste man noch weiter daran arbeiten, dass die Listenpunkte in der geordneten Liste nicht auch farbig erscheinen*/
+    
+    li:nth-child(1) {
+      color: red;
+    }
+    li:nth-child(2) {
+      color: blue;
+    }
+    li:nth-child(3) {
+      color: green;
+    }
+    li span {
+      color: black;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Geordnete und ungeordnete Listen</h1>
+  <h2>Geordnete Liste</h2>
+  <ol type="I">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>Bildbearbeitung
+      <ul>
+        <li><span>Photoshop</span></li>
+        <li><span>Lightroom</span></li>
+        <li><span>InDesign</span></li>
+      </ul>
+      <li>CMS</li>
+    </li>
+  </ol>
+  <br>
+  <h2>Ungeordnete Liste</h2>
+  <ul>
+    <li><span>Erster Aspekt</span></li>
+    <li><span>Zweiter Aspekt</span></li>
+    <li><span>Dritter Aspekt</span></li>
+  </ul>
+</body>
+</html>

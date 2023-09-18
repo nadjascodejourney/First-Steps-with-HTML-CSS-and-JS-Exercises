@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dokument mit Navigation</title>
+  <style>
+    body { /*damit der weiße Rand an der Box zum Bildschirmrand verschwindet*/
+      margin: 0;
+    }
+
+    main {/*damit mein Text im Hauptteil nicht am Rand klebt, nachdem wir oben den body auf 0 gestellt haben*/
+      margin: 20px;
+    }
+
+    nav {
+      background-color: turquoise;
+      padding: 10px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: chartreuse;
+      padding: 30px;
+      color:seagreen;
+    }
+
+    nav a:hover {
+      text-decoration: dotted;
+      background-color: indianred;
+      color: darksalmon;
+    }
+
+  </style>
+</head>
+<body>
+  <nav> <!--Wir haben die einzelnen Seiten im Navibereich so angelegt, dass jede Seite eigentlich nochmal neu geladen wird, das merkt der User aber nicht-->
+
+    <a href="navi-1.html">Home</a> <!--Auf der jeweils aktiven Seite im Editor, hier navi 1, könnte man in dieser Zeite statt navi-1.html auch eine # setzen -->
+
+    <a href="navi-2.html">About</a>
+
+    <a href="navi-3.html">Offers</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+  </main>
+  
+  
+</body>
+</html>

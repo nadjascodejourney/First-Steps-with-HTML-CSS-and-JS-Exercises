@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS-Position</title>
+
+  <style>
+    p {
+      position: relative;
+      left: 100px;
+      top: 50px;
+    }
+
+    div {
+      border: 2px solid black;
+    }
+
+    div.aussen {
+      position: relative;
+      width: 300px;
+      height: 500px;
+    }
+
+    div.innen {
+      background-color: red;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 10px;
+      right: 2ßpx;
+      transition: all 1s;
+    }
+
+    div.aussen:hover div.innen {
+      bottom: 100px;
+      right: 200px;
+    }
+
+    a {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+  </style>
+  
+</head>
+<body>
+  
+<h1>CSS-Positionseigenschaften </h1>
+
+<h2>position</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, officia.</p>
+
+<div class="außen"> Wo ist die Außenbox?
+
+<div class="innen">Kleine Box</div>
+
+</div>
+
+<a href="">Kontakt</a>
+
+</body>
+</html>

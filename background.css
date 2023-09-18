@@ -1,0 +1,13 @@
+body{
+  background-image: url(../bilder/Vogel.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section {
+  background-color: rgba(255, 255, 255, 0.192);
+  /*damit sich Transparenz nur auf Textbereich bezieht, wird hier auf die section bezogen*/
+  padding: 30px;
+  margin:70px;
+}

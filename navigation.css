@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth; /*damit kann man das Scroll-Verhalten etwas variieren, hier mit smooth etwas weicher*/
+}
+
+body { /*damit der weiße Rand an der Box zum Bildschirmrand verschwindet*/
+  margin: 0;
+}
+
+main {/*damit mein Text im Hauptteil nicht am Rand klebt, nachdem wir oben den body auf 0 gestellt haben*/
+  margin: 30px;
+}
+
+nav {
+  background-color: turquoise;
+  padding: 20px; /*Abstand um Menüpunkte herum; auch wichtig, hier genügend Abstand anzugeben, damit Menü rechts wegen flex-end unten nicht an der Scrollleiste klebt*/
+  box-sizing: border-box; /*damit um die Menükacheln nochmal Abstand zur nächstäußeren Box zu sehen ist*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: fixed; /*das hier eingeben, damit Navigation an fester Stelle stehen bleibt und sich oben über die ganze Bildschirmbreite zieht*/
+  top: 0;
+  width: 100%;
+  position: sticky; /*oder 'fixed', wenn kein header vorhanden wäre; sticky hier verwendet, damit Header oben zu sehen ist und dann beim Runterscrollen verschwindet*/
+  display: flex;
+  justify-content: flex-end; /*damit Menüauswahl rechts steht*/
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: chartreuse;
+  padding: 10px;
+  color:seagreen;
+}
+
+nav a:hover {
+  text-decoration: dotted;
+  background-color: indianred;
+  color: darksalmon;
+}
+
+h2 { /*weil ids zu den Überschriften in html in den h2 elementen stehen, muss man hier das h2 element anwählen, um die einstellung mit padding top vorzunehmen, dass die h2 nicht unter der Menüleiste verschwinden*/
+  padding-top: 90px;
+}
+
+h1 {
+  margin: 30px;
+  scroll-margin-top: 80px; /*damit h1 Überschrift beim Sprung und beim Scrollen nicht unter der Menüleiste verschwindet*/
+}
+header {
+  background-color: magenta;
+  width: 100%;
+  height: 80px;
+}
